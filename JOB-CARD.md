@@ -11,7 +11,7 @@ Classifies a support message so it lands on the right team.
 ## Output:
 returns a valid JSON object with the following fields:
 {
-  "category": one of [billing|bug|feat|other],
+  "category": one of [billing|bug|feature|other],
   "urgency": one of [low|normal|high],
   "confidence": 0.0-1.0,
   "reason":"string, one sentence"
