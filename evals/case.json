@@ -1,0 +1,43 @@
+[
+  {
+    "id": "billing-charged-after-cancel",
+    "input": "I cancelled my subscription last month but you charged my card again today.",
+    "expected": {"category": "billing", "urgency": "high"}
+  },
+  {
+    "id": "billing-invoice-copy",
+    "input": "Can you send me a copy of my invoice from March?",
+    "expected": {"category": "billing", "urgency": "low"}
+  },
+  {
+    "id": "bug-login-blocked",
+    "input": "Every time I try to log in I get a 500 error page, so I can't access my account at all.",
+    "expected": {"category": "bug", "urgency": "high"}
+  },
+  {
+    "id": "bug-search-workaround",
+    "input": "Search doesn't show files uploaded today. I can still find them by browsing folders, but it slows my team down.",
+    "expected": {"category": "bug", "urgency": "normal"}
+  },
+  {
+    "id": "feature-keyboard-shortcut",
+    "input": "Could you add a keyboard shortcut for archiving messages?",
+    "expected": {"category": "feature", "urgency": "low"}
+  },
+  {
+    "id": "other-office-visit",
+    "input": "Do you have an office in Berlin I could visit?",
+    "expected": {"category": "other", "urgency": "low"}
+  },
+  {
+    "id": "ambiguous-paid-feature-locked",
+    "input": "I upgraded to Pro yesterday and paid, but the export feature still says it's locked.",
+    "expected": {"category": "billing", "urgency": "high"}
+  },
+  {
+    "id": "unsure-nonsense",
+    "input": "purple monkey dishwasher tuesday",
+    "expected": {"category": "other", "urgency": "normal", "reason": "the model is unsure of the category"},
+    "confidence_below": 0.5
+  }
+]
