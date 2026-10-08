@@ -12,6 +12,7 @@ class Settings(BaseSettings):
     llm_stub: bool
     llm_prompt_version: str = Field(pattern=r"^v\d+$")
     llm_temp: float = Field(ge=0, le=2)
+    llm_kill_switch: bool
 
 
 settings = Settings()
